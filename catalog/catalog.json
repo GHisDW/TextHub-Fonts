@@ -1,0 +1,262 @@
+{
+  "version": "1",
+  "generated": "2024-01-01T00:00:00Z",
+  "catalog_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/catalog/catalog.json",
+  "fonts": [
+    {
+      "id": "roboto",
+      "family": "Roboto",
+      "designer": "Christian Robertson",
+      "category": "SANS_SERIF",
+      "license": "Apache-2.0",
+      "license_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/fonts/roboto/LICENSE",
+      "copyright": "Copyright 2011 The Roboto Project Authors (https://github.com/googlefonts/roboto)",
+      "source": "google-fonts",
+      "upstream_url": "https://github.com/google/fonts/tree/main/apache/roboto",
+      "upstream_commit": "",
+      "tags": ["humanist", "variable", "popular", "versatile"],
+      "styles": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "filename": "Roboto-Regular.ttf",
+          "url": "fonts/roboto/Roboto-Regular.ttf",
+          "format": "ttf",
+          "size_bytes": 168260
+        },
+        {
+          "weight": 700,
+          "style": "normal",
+          "filename": "Roboto-Bold.ttf",
+          "url": "fonts/roboto/Roboto-Bold.ttf",
+          "format": "ttf",
+          "size_bytes": 169036
+        },
+        {
+          "weight": 400,
+          "style": "italic",
+          "filename": "Roboto-Italic.ttf",
+          "url": "fonts/roboto/Roboto-Italic.ttf",
+          "format": "ttf",
+          "size_bytes": 174784
+        }
+      ],
+      "preview": {
+        "text": "The quick brown fox",
+        "color": "#1a1a1a"
+      },
+      "description": "Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves.",
+      "date_added": "2024-01-01"
+    },
+    {
+      "id": "open-sans",
+      "family": "Open Sans",
+      "designer": "Steve Matteson",
+      "category": "SANS_SERIF",
+      "license": "Apache-2.0",
+      "license_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/fonts/open-sans/LICENSE",
+      "copyright": "Copyright 2020 The Open Sans Project Authors (https://github.com/googlefonts/opensans)",
+      "source": "google-fonts",
+      "upstream_url": "https://github.com/google/fonts/tree/main/apache/opensans",
+      "upstream_commit": "",
+      "tags": ["humanist", "variable", "readable"],
+      "styles": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "filename": "OpenSans-Regular.ttf",
+          "url": "fonts/open-sans/OpenSans-Regular.ttf",
+          "format": "ttf"
+        },
+        {
+          "weight": 700,
+          "style": "normal",
+          "filename": "OpenSans-Bold.ttf",
+          "url": "fonts/open-sans/OpenSans-Bold.ttf",
+          "format": "ttf"
+        }
+      ],
+      "preview": { "text": "The quick brown fox", "color": "#1a1a1a" },
+      "description": "Open Sans is a humanist sans-serif typeface designed by Steve Matteson.",
+      "date_added": "2024-01-01"
+    },
+    {
+      "id": "lato",
+      "family": "Lato",
+      "designer": "Łukasz Dziedzic",
+      "category": "SANS_SERIF",
+      "license": "OFL-1.1",
+      "license_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/fonts/lato/OFL.txt",
+      "copyright": "Copyright (c) 2010-2014, Łukasz Dziedzic (dziedzic@typoland.com), with Reserved Font Name Lato",
+      "source": "google-fonts",
+      "upstream_url": "https://github.com/google/fonts/tree/main/ofl/lato",
+      "upstream_commit": "",
+      "tags": ["humanist", "clean", "variable"],
+      "styles": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "filename": "Lato-Regular.ttf",
+          "url": "fonts/lato/Lato-Regular.ttf",
+          "format": "ttf"
+        },
+        {
+          "weight": 700,
+          "style": "normal",
+          "filename": "Lato-Bold.ttf",
+          "url": "fonts/lato/Lato-Bold.ttf",
+          "format": "ttf"
+        }
+      ],
+      "preview": { "text": "The quick brown fox", "color": "#1a1a1a" },
+      "description": "Lato is a sans-serif typeface family started in the summer of 2010 by Warsaw-based designer Łukasz Dziedzic.",
+      "date_added": "2024-01-01"
+    },
+    {
+      "id": "merriweather",
+      "family": "Merriweather",
+      "designer": "Sorkin Type",
+      "category": "SERIF",
+      "license": "OFL-1.1",
+      "license_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/fonts/merriweather/OFL.txt",
+      "copyright": "Copyright 2016 The Merriweather Project Authors (https://github.com/SorkinType/Merriweather)",
+      "source": "google-fonts",
+      "upstream_url": "https://github.com/google/fonts/tree/main/ofl/merriweather",
+      "upstream_commit": "",
+      "tags": ["readable", "editorial", "print"],
+      "styles": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "filename": "Merriweather-Regular.ttf",
+          "url": "fonts/merriweather/Merriweather-Regular.ttf",
+          "format": "ttf"
+        },
+        {
+          "weight": 700,
+          "style": "normal",
+          "filename": "Merriweather-Bold.ttf",
+          "url": "fonts/merriweather/Merriweather-Bold.ttf",
+          "format": "ttf"
+        }
+      ],
+      "preview": { "text": "The quick brown fox", "color": "#1a1a1a" },
+      "description": "Merriweather was designed to be a text face that is pleasant to read on screens.",
+      "date_added": "2024-01-01"
+    },
+    {
+      "id": "playfair-display",
+      "family": "Playfair Display",
+      "designer": "Claus Eggers Sørensen",
+      "category": "SERIF",
+      "license": "OFL-1.1",
+      "license_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/fonts/playfair-display/OFL.txt",
+      "copyright": "Copyright 2017 The Playfair Display Project Authors (https://github.com/clauseggers/Playfair-Display)",
+      "source": "google-fonts",
+      "upstream_url": "https://github.com/google/fonts/tree/main/ofl/playfairdisplay",
+      "upstream_commit": "",
+      "tags": ["editorial", "elegant", "display"],
+      "styles": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "filename": "PlayfairDisplay-Regular.ttf",
+          "url": "fonts/playfair-display/PlayfairDisplay-Regular.ttf",
+          "format": "ttf"
+        },
+        {
+          "weight": 700,
+          "style": "normal",
+          "filename": "PlayfairDisplay-Bold.ttf",
+          "url": "fonts/playfair-display/PlayfairDisplay-Bold.ttf",
+          "format": "ttf"
+        }
+      ],
+      "preview": { "text": "Aa Bb Cc", "color": "#1a1a1a" },
+      "description": "Playfair Display is a transitional design. The high contrast and ball terminals reflect influences of the Enlightenment era.",
+      "date_added": "2024-01-01"
+    },
+    {
+      "id": "source-code-pro",
+      "family": "Source Code Pro",
+      "designer": "Paul D. Hunt",
+      "category": "MONOSPACE",
+      "license": "OFL-1.1",
+      "license_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/fonts/source-code-pro/OFL.txt",
+      "copyright": "Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'.",
+      "source": "google-fonts",
+      "upstream_url": "https://github.com/google/fonts/tree/main/ofl/sourcecodepro",
+      "upstream_commit": "",
+      "tags": ["monospace", "code", "programming"],
+      "styles": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "filename": "SourceCodePro-Regular.ttf",
+          "url": "fonts/source-code-pro/SourceCodePro-Regular.ttf",
+          "format": "ttf"
+        }
+      ],
+      "preview": { "text": "const hello = 'world'", "color": "#1a1a1a" },
+      "description": "Source Code Pro is a set of OpenType fonts that have been designed to work well in user interface environments.",
+      "date_added": "2024-01-01"
+    },
+    {
+      "id": "dancing-script",
+      "family": "Dancing Script",
+      "designer": "Impallari Type",
+      "category": "HANDWRITING",
+      "license": "OFL-1.1",
+      "license_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/fonts/dancing-script/OFL.txt",
+      "copyright": "Copyright 2011 The Dancing Script Project Authors (https://github.com/googlefonts/dancing-script)",
+      "source": "google-fonts",
+      "upstream_url": "https://github.com/google/fonts/tree/main/ofl/dancingscript",
+      "upstream_commit": "",
+      "tags": ["script", "casual", "handwritten"],
+      "styles": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "filename": "DancingScript-Regular.ttf",
+          "url": "fonts/dancing-script/DancingScript-Regular.ttf",
+          "format": "ttf"
+        }
+      ],
+      "preview": { "text": "Hello World", "color": "#1a1a1a" },
+      "description": "Dancing Script is a lively casual script where the letters bounce and change size slightly.",
+      "date_added": "2024-01-01"
+    },
+    {
+      "id": "oswald",
+      "family": "Oswald",
+      "designer": "Vernon Adams",
+      "category": "SANS_SERIF",
+      "license": "OFL-1.1",
+      "license_url": "https://raw.githubusercontent.com/GHisDW/TextHub-Fonts/main/fonts/oswald/OFL.txt",
+      "copyright": "Copyright 2011-2012, Vernon Adams (vern@newtypography.co.uk), with Reserved Font Name 'Oswald'",
+      "source": "google-fonts",
+      "upstream_url": "https://github.com/google/fonts/tree/main/ofl/oswald",
+      "upstream_commit": "",
+      "tags": ["condensed", "display", "headings"],
+      "styles": [
+        {
+          "weight": 400,
+          "style": "normal",
+          "filename": "Oswald-Regular.ttf",
+          "url": "fonts/oswald/Oswald-Regular.ttf",
+          "format": "ttf"
+        },
+        {
+          "weight": 700,
+          "style": "normal",
+          "filename": "Oswald-Bold.ttf",
+          "url": "fonts/oswald/Oswald-Bold.ttf",
+          "format": "ttf"
+        }
+      ],
+      "preview": { "text": "OSWALD CONDENSED", "color": "#1a1a1a" },
+      "description": "Oswald is a reworking of the classic style historically represented by the 'Alternate Gothic' sans-serif typefaces.",
+      "date_added": "2024-01-01"
+    }
+  ]
+}
