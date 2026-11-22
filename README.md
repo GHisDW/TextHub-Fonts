@@ -1,94 +1,115 @@
+<div align="center">
+
 # TextHub-Fonts
 
-> The community font repository for the [TextHub](https://github.com/GHisDW/TextHub) desktop application.
+**The open community font repository for the TextHub ecosystem.**
 
-[![Validate Contributions](https://github.com/GHisDW/TextHub-Fonts/actions/workflows/validate-contribution.yml/badge.svg)](https://github.com/GHisDW/TextHub-Fonts/actions/workflows/validate-contribution.yml)
+[![Validate Community Contribution](https://github.com/GHisDW/TextHub-Fonts/actions/workflows/validate-contribution.yml/badge.svg)](https://github.com/GHisDW/TextHub-Fonts/actions/workflows/validate-contribution.yml)
+[![License: MIT](https://img.shields.io/badge/Infrastructure_License-MIT-blue.svg)](LICENSE)
+[![Open Source Fonts](https://img.shields.io/badge/Fonts-OFL_|_Apache_|_UFL-success.svg)](#licensing)
+
+</div>
 
 ---
 
-## What is this?
+## About TextHub-Fonts
 
-TextHub-Fonts is an independent, openly maintained font catalogue. The TextHub desktop application fetches its font catalog and individual font files directly from this repository — no paid backend required.
+`TextHub-Fonts` serves as the decentralized font distribution catalogue for the [TextHub Desktop Application](https://github.com/GHisDW/TextHub). It is designed to host, catalog, and serve open-source typography via static endpoints (`raw.githubusercontent.com`) with zero hosting cost, no paid databases, and no closed-door approval processes.
 
-The catalog is a versioned JSON file. Font files are served as raw GitHub assets.
+## Repository Architecture
 
-## Repository Structure
-
-```
+```text
 TextHub-Fonts/
-  catalog/
-    catalog.json          # Versioned font catalogue (fetched by TextHub)
-  fonts/
-    <family-id>/
-      <FontFile>.ttf      # Actual font binary
-      LICENSE             # Original font licence (preserved verbatim)
-      OFL.txt             # (If OFL)
-  sources/
-    google-fonts/         # Import manifests from Google Fonts
-  scripts/
-    import-google-fonts.js  # Google Fonts importer
-    validate-catalog.js     # Catalogue validator
-    sync-catalog.js         # Regenerate catalog.json from fonts/
-  .github/
-    workflows/
-      validate-contribution.yml
-      update-catalog.yml
-  CONTRIBUTING.md
-  LICENSE                 # MIT (repo licence, not font licences)
-  README.md
+├── catalog/
+│   └── catalog.json          # Master versioned JSON catalogue consumed by TextHub
+├── fonts/
+│   ├── <font-id>/
+│   │   ├── <FontName>-Regular.ttf
+│   │   ├── <FontName>-Bold.ttf
+│   │   ├── OFL.txt (or LICENSE)
+├── scripts/
+│   ├── validate-catalog.js   # Automated CI validator for schema & font integrity
+│   └── import-google-fonts.js# Automated Google Fonts sync & licensing harvester
+├── .github/
+│   └── workflows/
+│       └── validate-contribution.yml  # Automated pull request verification
+├── CONTRIBUTING.md           # Step-by-step contribution instructions
+├── LICENSE                   # Repository infrastructure license
+└── README.md
 ```
-
-## Catalogue Format
-
-Each font in `catalog/catalog.json` has:
-
-| Field | Description |
-|-------|-------------|
-| `id` | Unique kebab-case identifier |
-| `family` | Font family display name |
-| `designer` | Original type designer(s) |
-| `category` | `SANS_SERIF`, `SERIF`, `DISPLAY`, `HANDWRITING`, or `MONOSPACE` |
-| `license` | SPDX license identifier (`OFL-1.1`, `Apache-2.0`, `UFL-1.0`) |
-| `copyright` | Verbatim copyright string from the font file |
-| `source` | `google-fonts` or `community` |
-| `styles` | Array of weight/style/filename/url entries |
-| `tags` | Search tags |
-
-## Contributing
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full guide.
-
-**Quick summary:**
-
-1. Fork this repository
-2. Add your font files under `fonts/<family-id>/`
-3. Add a license file (required)
-4. Add an entry to `catalog/catalog.json`
-5. Open a pull request
-6. GitHub Actions will validate your submission automatically
-7. A maintainer will review and merge
-
-**We will not merge:**
-- Fonts without a valid open-source licence
-- Fonts with missing copyright notices
-- Duplicate font IDs
-- Files that fail validation
-
-## Font Licensing
-
-**Every font has its own licence.** The `LICENSE` file in this repository root covers only the scripts and infrastructure — not the fonts.
-
-Each font entry in the catalogue includes:
-- The original `license` field (SPDX identifier)
-- A link to the original `license_url`
-- The verbatim `copyright` string
-
-Always check the individual font's licence before use.
-
-## Google Fonts Integration
-
-This repository includes a subset of fonts from [Google Fonts](https://github.com/google/fonts). These are used under their original licences (Apache-2.0, OFL-1.1, UFL-1.0). Google does not endorse TextHub.
 
 ---
 
-**TextHub-Fonts** is maintained by the [TextHub community](https://github.com/GHisDW/TextHub).
+## Submitting Your Typeface
+
+We welcome original font designs and permissive open-source typefaces! TextHub does not require proprietary user accounts — contributions are handled transparently via GitHub Pull Requests.
+
+### Quick Submission Guide
+
+1. **Design or Export Your Font**:
+   Use **TextHub Font Studio** or any vector editor to compile a valid `.ttf` or `.otf` file.
+
+2. **Fork this Repository**:
+   Click **Fork** on the top right of this repository.
+
+3. **Add Your Font Files**:
+   Create a folder under `fonts/<font-id>/` containing your font files and license:
+   ```
+   fonts/my-typeface/
+     MyTypeface-Regular.ttf
+     OFL.txt
+   ```
+
+4. **Register in `catalog/catalog.json`**:
+   Add an entry into the `fonts` array:
+   ```json
+   {
+     "id": "my-typeface",
+     "family": "My Typeface",
+     "designer": "Your Name",
+     "category": "SANS_SERIF",
+     "license": "OFL-1.1",
+     "copyright": "Copyright 2026 Your Name",
+     "source": "community",
+     "tags": ["modern", "clean", "geometric"],
+     "styles": [
+       {
+         "weight": 400,
+         "style": "normal",
+         "filename": "MyTypeface-Regular.ttf",
+         "url": "fonts/my-typeface/MyTypeface-Regular.ttf",
+         "format": "ttf"
+       }
+     ],
+     "preview": {
+       "text": "The quick brown fox",
+       "color": "#1a1a1a"
+     }
+   }
+   ```
+   *(You can also use the **Creator Hub** in the TextHub desktop app to auto-generate this snippet).*
+
+5. **Run Local Validation**:
+   ```bash
+   node scripts/validate-catalog.js
+   ```
+
+6. **Submit a Pull Request**:
+   Once submitted, GitHub Actions will run the automated suite. Maintainers will review and merge approved entries, making your font instantly discoverable across all TextHub installations worldwide.
+
+---
+
+## Licensing & Legal Requirements
+
+- **Repository Infrastructure**: The scripts, schema, and workflows are licensed under the [MIT License](LICENSE).
+- **Font Binaries**: Every individual font family retains its independent open-source license. We strictly accept:
+  - **SIL Open Font License 1.1 (OFL-1.1)**
+  - **Apache License 2.0 (Apache-2.0)**
+  - **Ubuntu Font License 1.0 (UFL-1.0)**
+- **Attribution**: Original copyright notices, designer metadata, and license files are permanently preserved verbatim in both the catalogue entries and font subdirectories.
+
+---
+
+## Connected Ecosystem
+
+- **Desktop Application**: [GHisDW/TextHub](https://github.com/GHisDW/TextHub)
